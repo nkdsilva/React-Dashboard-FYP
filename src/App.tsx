@@ -8,8 +8,6 @@ import Menu from "./components/menu/Menu";
 import Login from "./pages/login/Login";
 import "./styles/global.scss";
 import Calendar from "./pages/calendar/Calendar";
-//import BasicDatePicker from "./pages/calendar/Calendar";
-import Time from "./time";
 
 function App() {
 
@@ -26,7 +24,6 @@ function App() {
           </div>
         </div>
         <Footer/>
-        <Time/>
       </div>
     )
   }

@@ -4,7 +4,6 @@ import './calendar.scss';
 
 function PowerData() {
   const [selectedDate, setSelectedDate] = useState<string>('');
-  const[selectedMonth, setSelectedMonth]=useState<String>('');
   const [power, setPower] = useState<string>('');
   const [loading, setLoading] = useState<boolean>(false);
 
