@@ -8,6 +8,7 @@ import Menu from "./components/menu/Menu";
 import Login from "./pages/login/Login";
 import "./styles/global.scss";
 import Calendar from "./pages/calendar/Calendar";
+import Note from "./pages/notes/Note";
 
 function App() {
 
@@ -44,6 +45,10 @@ function App() {
       {
         path:"/profile",
         element:<Profile/>,
+      },
+      {
+        path:"/note",
+        element:<Note/>,
       },
       {
         path:"/calendar",

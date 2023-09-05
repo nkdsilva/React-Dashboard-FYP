@@ -35,9 +35,9 @@ export const menu = [
         },
         {
           id: 3,
-          title: "Posts",
-          url: "/posts",
-          icon: "post2.svg",
+          title: "Notes",
+          url: "/notes",
+          icon: "note.svg",
         },
       ],
     },
@@ -53,18 +53,12 @@ export const menu = [
         },
         {
           id: 2,
-          title: "Notes",
-          url: "/",
-          icon: "note.svg",
-        },
-        {
-          id: 3,
           title: "Forms",
           url: "/",
           icon: "form.svg",
         },
         {
-          id: 4,
+          id: 3,
           title: "Calendar",
           url: "/",
           icon: "calendar.svg",
