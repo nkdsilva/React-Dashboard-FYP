@@ -9,6 +9,7 @@ import Login from "./pages/login/Login";
 import "./styles/global.scss";
 import Calendar from "./pages/calendar/Calendar";
 import Note from "./pages/notes/Note";
+import User from "./pages/user/User";
 
 function App() {
 
@@ -45,6 +46,10 @@ function App() {
       {
         path:"/profile",
         element:<Profile/>,
+      },
+      {
+        path:"/users/:id",
+        element:<User/>,
       },
       {
         path:"/note",
