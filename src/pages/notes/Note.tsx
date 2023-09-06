@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { nanoid } from 'nanoid';
-import NotesList from './noteList';
-import Search from './Search';
+import NotesList from './Notelist';
 import './notes.scss';
 
 interface Note {
@@ -21,16 +20,6 @@ const Note: React.FC = () => {
       id: nanoid(),
       text: 'This is my second note!',
       date: '21/04/2021',
-    },
-    {
-      id: nanoid(),
-      text: 'This is my third note!',
-      date: '28/04/2021',
-    },
-    {
-      id: nanoid(),
-      text: 'This is my new note!',
-      date: '30/04/2021',
     },
   ]);
 
@@ -72,6 +61,7 @@ const Note: React.FC = () => {
   return (
     <div>
       <div className='container'>
+        <h1>Notes</h1>
         <NotesList
           notes={notes.filter((note) =>
             note.text.toLowerCase().includes(searchText.toLowerCase())
