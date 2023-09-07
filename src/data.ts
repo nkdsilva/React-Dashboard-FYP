@@ -106,51 +106,58 @@ export const menu = [
     {
       id: 1,
       img: "https://images.pexels.com/photos/8405873/pexels-photo-8405873.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-      username: "Elva McDonald",
-      email: "elva@gmail.com",
-      amount: "3.668",
+      username: "J.Dissanayake",
+      email: "jd@gmail.com",
+      code: "COL_15_3289",
     },
     {
       id: 2,
       img: "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      username: "Linnie Nelson",
-      email: "linnie@gmail.com",
-      amount: "3.256",
+      username: "Kumari Rathnayake",
+      email: "kumariR@gmail.com",
+      code: "KUR_04_3478",
     },
     {
       id: 3,
       img: "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      username: "Brent Reeves",
-      email: "brent@gmail.com",
-      amount: "2.998",
+      username: "Sarath De Silva",
+      email: "sdsilva@gmail.com",
+      code: "COL_05_5346",
     },
     {
       id: 4,
       img: "https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      username: "Adeline Watson",
-      email: "adeline@gmail.com",
-      amount: "2.512",
+      username: "Dennis Perera",
+      email: "dennisP@gmail.com",
+      code: "ANU_01_1234",
     },
     {
       id: 5,
       img: "https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&w=1600",
       username: "Juan Harrington",
       email: "juan@gmail.com",
-      amount: "2.134",
+      code: "COL_05_1789",
     },
     {
       id: 6,
-      img: "https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      username: "Augusta McGee",
-      email: "augusta@gmail.com",
-      amount: "1.932",
+      img: "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      username: "Saman Kumara",
+      email: "samanK@gmail.com",
+      code: "GAL_05_0546",
     },
     {
       id: 7,
-      img: "https://images.pexels.com/photos/874158/pexels-photo-874158.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      username: "Angel Thomas",
-      email: "angel@gmail.com",
-      amount: "1.560",
+      img: "https://images.pexels.com/photos/8405873/pexels-photo-8405873.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+      username: "Lalith Peiris",
+      email: "lalithP@gmail.com",
+      code: "KUR_01_0354",
+    },
+    {
+      id: 8,
+      img: "https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      username: "Dennis Perera",
+      email: "dennisP@gmail.com",
+      code: "MAT_01_1234",
     },
   ];
 
@@ -175,7 +182,7 @@ export const menu = [
   export const chartBoxProduct = {
     color:"skyblue",
     icon:"/productIcon.svg",
-    title:"Total Products",
+    title:"Total Consumption",
     number:"238",
     dataKey:"products",
     percentage:21,
@@ -190,10 +197,10 @@ export const menu = [
     ]
   };
 
-  export const chartBoxRevenue = {
+  export const chartBoxDaily = {
     color:"teal",
     icon:"/revenueIcon.svg",
-    title:"Total Revenue",
+    title:"Daily Consumption",
     number:"$56.432",
     dataKey:"revenue",
     percentage:-12,
@@ -208,10 +215,10 @@ export const menu = [
     ]
   };
 
-  export const chartBoxConversion = {
+  export const chartBoxMonthly = {
     color:"gold",
     icon:"/conversionIcon.svg",
-    title:"Total Ratio",
+    title:"Monthly Consumption",
     number:"2.6",
     dataKey:"ratio",
     percentage:12,
@@ -227,7 +234,7 @@ export const menu = [
   };
 
   export const barChartBoxVisit = {
-    title: "Total Visit",
+    title: "Monthly Consumption",
     color: "#FF8042",
     dataKey: "visit",
     chartData: [

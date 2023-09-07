@@ -56,7 +56,7 @@ import {
   const Bigchartbox = () => {
     return (
       <div className="bigChartBox">
-        <h1>Revenue Analytics</h1>
+        <h1>Daily Consumption</h1>
         <div className="chart">
           <ResponsiveContainer width="99%" height="100%">
             <AreaChart

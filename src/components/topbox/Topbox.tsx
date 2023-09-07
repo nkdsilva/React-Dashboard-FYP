@@ -4,7 +4,7 @@ import { topDealUsers } from "../../data.ts";
 const Topbox = () =>{
     return(
         <div className="topbox">
-            <h1>Top Deals</h1>
+            <h1>Top Users</h1>
             <div className="list">
                 {topDealUsers.map(user=>(
                     <div className="listItem" key={user.id}>
@@ -12,10 +12,11 @@ const Topbox = () =>{
                             <img src={user.img} alt=""/>
                             <div className="userTexts">
                                 <span className="username">{user.username}</span>
+                                <br></br>
                                 <span className="email">{user.email}</span>
                             </div>
                         </div>
-                        <span className="amount">${user.amount}</span>
+                        <span className="code">{user.code}</span>
                     </div>
                 ))}
             </div>
