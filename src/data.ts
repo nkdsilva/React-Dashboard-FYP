@@ -152,13 +152,13 @@ export const menu = [
       email: "lalithP@gmail.com",
       code: "KUR_01_0354",
     },
-    {
-      id: 8,
-      img: "https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      username: "Dennis Perera",
-      email: "dennisP@gmail.com",
-      code: "MAT_01_1234",
-    },
+    // {
+    //   id: 8,
+    //   img: "https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    //   username: "Dennis Perera",
+    //   email: "dennisP@gmail.com",
+    //   code: "MAT_01_1234",
+    // },
   ];
 
   export const chartBoxUser = {

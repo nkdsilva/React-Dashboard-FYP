@@ -23,18 +23,18 @@ const Chartbox = (props:Props) =>{
                 <Link to="/" style={{color:props.color}}>View all</Link>
             </div>
             <div className="chartInfo">
-                <div className="chart">
+                {/* <div className="chart">
                     <ResponsiveContainer width="99%" height="100%">
                         <LineChart data={props.chartData}>
                           <Tooltip contentStyle={{background:"transparent",border:"none"}} labelStyle={{display:"none"}}/>
                             <Line type="monotone" dataKey={props.dataKey} stroke={props.color} dot={false} strokeWidth={2}/>
                         </LineChart>
                     </ResponsiveContainer>
-                </div>
-                <div className="texts">
+                </div> */}
+                {/* <div className="texts">
                     <span className="percentage" style={{color:props.percentage < 0 ?"tomato":"limegreen"}}>{props.percentage}</span>
                     <span className="duration">This month</span>
-                </div>
+                </div> */}
             </div>
         </div>
     )

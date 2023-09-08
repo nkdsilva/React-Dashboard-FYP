@@ -2,27 +2,32 @@ import { Cell, Pie, PieChart, ResponsiveContainer, Tooltip } from "recharts";
 import "./piechartbox.scss";
 
 const data = [
-  { name: "Mobile", value: 400, color: "#0088FE" },
-  { name: "Desktop", value: 300, color: "#00C49F" },
-  { name: "Laptop", value: 300, color: "#FFBB28" },
-  { name: "Tablet", value: 200, color: "#FF8042" },
+  { name: "North", value: 400, color: "#0088FE" },
+  { name: "North Central", value: 300, color: "#00C49F" },
+  { name: "Western", value: 300, color: "#FFBB28" },
+  { name: "North Western", value: 200, color: "#FF8042" },
+  { name: "Central", value: 200, color: "#FF8042" },
+  { name: "Southern", value: 200, color: "#FF8042" },
+  { name: "Sabaragamuwa", value: 200, color: "#FF8042" },
+  { name: "Eastern", value: 200, color: "#FF8042" },
+  { name: "Uwa", value: 200, color: "#FF8042" },
 ];
 
 const Piechartbox = () => {
   return (
     <div className="pieChartBox">
-      <h1>Leads by Source</h1>
+      <h1>Provincial Energy Consumption</h1>
       <div className="chart">
-        <ResponsiveContainer width="99%" height={300}>
+        <ResponsiveContainer width="99%" height={400}>
           <PieChart>
             <Tooltip
               contentStyle={{ background: "white", borderRadius: "5px" }}
             />
             <Pie
               data={data}
-              innerRadius={"70%"}
+              innerRadius={"50%"}
               outerRadius={"90%"}
-              paddingAngle={5}
+              paddingAngle={3}
               dataKey="value"
             >
               {data.map((item) => (
@@ -35,11 +40,11 @@ const Piechartbox = () => {
       <div className="options">
         {data.map((item) => (
           <div className="option" key={item.name}>
-            <div className="title">
+            {/* <div className="title">
               <div className="dot" style={{ backgroundColor: item.color }} />
               <span>{item.name}</span>
             </div>
-            <span>{item.value}</span>
+            <span>{item.value}</span> */}
           </div>
         ))}
       </div>
