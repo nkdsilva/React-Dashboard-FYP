@@ -2,7 +2,6 @@ import axios from 'axios';
 import { Component } from 'react';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
-import './calendar.scss'
 
 interface State {
     startTime: Date;
@@ -60,8 +59,7 @@ class Time extends Component<{}, State>  {
   render() {
     return (
       <div>
-        <h1>Daily Power Consumption</h1>
-        <div className='input'>
+        <div>
           <label>Start Time:</label>
           <DatePicker
             selected={this.state.startTime}
@@ -70,8 +68,8 @@ class Time extends Component<{}, State>  {
             dateFormat="yyyy-MM-dd HH:mm:ss"
           />
         </div>
-        <div className='input'>
-          <label>End Time :</label>
+        <div>
+          <label>End Time:</label>
           <DatePicker
             selected={this.state.endTime}
             onChange={this.handleEndTimeChange}
@@ -80,9 +78,9 @@ class Time extends Component<{}, State>  {
           />
         </div>
         <div>
-          <button onClick={this.sendPostRequest}>Search</button>
+          <button onClick={this.sendPostRequest}>Send POST Request</button>
         </div>
-        <div className="output">
+        <div>
           <label>Power (kW/h):</label>
           <textarea
             readOnly
@@ -97,5 +95,3 @@ class Time extends Component<{}, State>  {
 }
 
 export default Time;
-
-

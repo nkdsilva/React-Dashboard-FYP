@@ -5,6 +5,7 @@ button{
     border-radius: 10px;
     background-color: green;
     color: white;
+    width: 100px;
 }
 input
 {
@@ -18,5 +19,14 @@ h1{
 h3{
     margin-top:20px;
     margin-bottom:20px;
+}
+.output
+{
+    textarea
+    {
+        background-color: white;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
 }
 
