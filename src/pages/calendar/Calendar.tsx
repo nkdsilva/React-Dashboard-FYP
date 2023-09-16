@@ -86,15 +86,21 @@ class Time extends Component<{}, State>  {
           <label>Power (kW/h):</label>
           <textarea
             readOnly
-            rows={2}
-            cols={50}
-            value={this.state.responseText}
-          />
+            rows={1}
+            cols={30}>1.56
+          </textarea>
         </div>
       </div>
     );
   }
 }
+
+{/* <textarea
+            readOnly
+            rows={2}
+            cols={50}
+            value={this.state.responseText}>1.56
+          </textarea> */}
 
 export default Time;
 
