@@ -25,6 +25,8 @@ class Time extends Component<{}, State>  {
   // Function to handle the start time change
   handleStartTimeChange = (date:Date) => {
     this.setState({ startTime: date });
+    console.log('Start Time changed:', date);
+    console.log("Hello");
   };
 
   // Function to handle the end time change
@@ -34,6 +36,7 @@ class Time extends Component<{}, State>  {
 
   // Function to send the POST request
   sendPostRequest = () => {
+    console.log('start_time:');
     const url = 'http://34.16.149.49:4000/backend/power';
     const headers = {
       'Content-Type': 'application/json',
@@ -43,6 +46,9 @@ class Time extends Component<{}, State>  {
       end_time: this.state.endTime.toISOString(),     // Convert to ISO string
       sensor: this.state.sensor,
     };
+
+    
+    console.log('end_time:', data.end_time);
 
     axios
       .post(url, data, { headers })
@@ -64,6 +70,7 @@ class Time extends Component<{}, State>  {
         <div className='input'>
           <label>Start Time:</label>
           <DatePicker
+          
             selected={this.state.startTime}
             onChange={this.handleStartTimeChange}
             showTimeSelect
@@ -87,20 +94,13 @@ class Time extends Component<{}, State>  {
           <textarea
             readOnly
             rows={1}
-            cols={30}>1.56
+            cols={30}>
           </textarea>
         </div>
       </div>
     );
   }
 }
-
-{/* <textarea
-            readOnly
-            rows={2}
-            cols={50}
-            value={this.state.responseText}>1.56
-          </textarea> */}
 
 export default Time;
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import Note from './Notes';
-import AddNote from './addnote';
+import AddNote from './Addnote';
 
 interface NotesListProps {
   notes: {
